@@ -15,7 +15,7 @@ steps:
     DOCKER_PASSWORD:
       from_secret: DOCKER_PASSWORD
   commands:
-  - sleep 5 ## give docker enough time to start
+  - sleep 5 ## give docker enough time to start. Kae a change
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   - echo "Jaya Guru Datta !! and Sree Guru Datta 1!"
 
