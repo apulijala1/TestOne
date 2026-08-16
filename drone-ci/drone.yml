@@ -15,7 +15,7 @@ steps:
     DOCKER_PASSWORD:
       from_secret: DOCKER_PASSWORD
   commands:
-  - sleep 5 ## give docker enough time to start. Kae a change
+  - sleep 5 # give docker enough time to start. Kae a change
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   - docker build -t $DOCKER_USER/mydronego:latest .
   - docker run --rm $DOCKER_USER/mydronego:latest
