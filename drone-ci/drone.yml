@@ -32,3 +32,16 @@ services:
 volumes:
 - name: dockersock
   temp: {}
+
+---
+kind: pipeline
+type: kubernetes
+name: mytest 
+
+steps: 
+- name: test 
+  image: alpine 
+  commands: 
+  - echo "HEllo World !!"
+  
+  
