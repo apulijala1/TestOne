@@ -18,6 +18,7 @@ steps:
   - sleep 5 ## give docker enough time to start. Kae a change
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   - docker build -t $DOCKER_USER/mydronego:latest .
+  - docker run --rm $DOCKER_USER/mydronego:latest
   - docker push $DOCKER_USER/mydronego:latest
   - echo "Jaya Guru Datta !! and Sree Guru Datta 1!"
 

@@ -4,6 +4,6 @@ import "fmt"
 
 func main() {
 
-    fmt.Println("Welcome to multi-stage Docker builds")
+    fmt.Println("Om Aim Hreem Shreem Kleem Namaha !!")
 
 }
